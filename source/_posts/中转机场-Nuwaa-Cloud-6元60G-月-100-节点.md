@@ -2,9 +2,12 @@
 title: 中转机场 Nuwaa Cloud 6元60G/月, 100+节点
 comment: gitalk
 date: 2025-03-12 22:07:08
-tags: 中转机场, 低价机场
+tags: [中转机场, 低价机场]
 banner_img: assets/中转机场-Nuwaa-Cloud-6元60G-月-100-节点/image.png
 index_img: assets/中转机场-Nuwaa-Cloud-6元60G-月-100-节点/image.png
+categories: 
+    - 机场
+    - 中转机场
 ---
 
 
