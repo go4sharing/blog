@@ -252,13 +252,13 @@ web_analytics:
   # 百度统计的 Key，值需要获取下方链接中 `hm.js?` 后边的字符串
   # Baidu analytics, get the string behind `hm.js?`
   # See: https://tongji.baidu.com/sc-web/10000033910/home/site/getjs?siteId=13751376
-  baidu:
+  baidu: 5d9b80096784c14eb00012d8bbb9faf8
 
   # Google Analytics 4 的媒体资源 ID
   # Google Analytics 4 MEASUREMENT_ID
   # See: https://support.google.com/analytics/answer/9744165#zippy=%2Cin-this-article
   google:
-    measurement_id:
+    measurement_id: UMAIEtfiSl63iH_qmAh99w
 
   # 腾讯统计的 H5 App ID，开启高级功能才有cid
   # Tencent analytics, set APP ID
@@ -353,7 +353,7 @@ navbar:
   # 导航栏毛玻璃特效，实验性功能，可能会造成页面滚动掉帧和抖动，部分浏览器不支持会自动不生效
   # Navigation bar frosted glass special animation. It is an experimental feature
   ground_glass:
-    enable: false
+    enable: true
 
     # 模糊像素，只能为数字，数字越大模糊度越高
     # Number of blurred pixel. the larger the number, the higher the blur
@@ -374,7 +374,7 @@ navbar:
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     - { key: "官方群", link: "https://t.me/go2sharing", icon: "iconfont icon-group-fill" }
     - { key: "官方频道", link: "https://t.me/go4sharing", icon: "iconfont icon-channel-fill" }
-    #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -456,7 +456,7 @@ footer:
   # 展示网站的 PV、UV 统计数
   # Display website PV and UV statistics
   statistics:
-    enable: false
+    enable: true
 
     # 统计数据来源，使用 leancloud, umami 需要设置 `web_analytics` 中对应的参数；使用 busuanzi 不需要额外设置，但是有时不稳定，另外本地运行时 busuanzi 显示统计数据很大属于正常现象，部署后会正常
     # Data source. If use leancloud, umami, you need to set the parameter in `web_analytics`
@@ -1031,22 +1031,40 @@ links:
   # Member item of page
   items:
     - {
-      title: "Fluid Blog",
-      intro: "主题博客",
-      link: "https://hexo.fluid-dev.com/",
-      avatar: "/img/favicon.png"
+      title: "翻墙世界的梯子",
+      intro: "频道",
+      link: "https://t.me/s/wxgqlfx",
+      avatar: /assets/index/image-3.png
     }
     - {
-      title: "Fluid Docs",
-      intro: "主题使用指南",
-      link: "https://hexo.fluid-dev.com/docs/",
-      avatar: "/img/favicon.png"
+      title: "机场分享交流频道",
+      intro: "频道",
+      link: "https://t.me/s/AirportShare",
+      avatar: /assets/index/image-2.png
     }
     - {
-      title: "Fluid Repo",
-      intro: "主题 GitHub 仓库",
-      link: "https://github.com/fluid-dev/hexo-theme-fluid",
-      avatar: "/img/favicon.png"
+      title: "vpnhat",
+      intro: "频道",
+      link: "https://t.me/s/vpnhat",
+      avatar: /assets/index/image-1.png
+    }
+    - {
+      title: "免费节点VPN分享🇨🇳",
+      intro: "频道",
+      link: "https://t.me/s/FreeVpnChina",
+      avatar: /assets/index/image-4.png
+    }
+    - {
+      title: "机场列表",
+      intro: "频道",
+      link: "https://t.me/s/jichang_list",
+      avatar: /assets/index/image-5.png
+    }
+    - {
+      title: "机场订阅节点VPN分享社 🅥",
+      intro: "频道",
+      link: "https://t.me/s/wxdy666",
+      avatar: /assets/index/image-6.png
     }
 
   # 当成员头像加载失败时，替换为指定图片
@@ -1062,11 +1080,11 @@ links:
   # 评论插件
   # Comment plugin
   comments:
-    enable: false
+    enable: true
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
-    type: disqus
+    type: gitalk
 
 
 #---------------------------
