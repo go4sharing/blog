@@ -1,0 +1,35 @@
+name: CI Workflow
+
+# 触发事件
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js (如果是 Node.js 项目)
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm run build
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          publish_dir: ./public  # 这是你构建目录，Jekyll 默认输出目录是 `_site`
+          publish_branch: main  # 推送到 a.github.io 的 main 分支
+          user_name: 'github-actions'
+          user_email: 'github-actions@github.com'
