@@ -28,7 +28,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
           publish_dir: ./public  # 这是你构建目录，Jekyll 默认输出目录是 `_site`
           publish_branch: gh-pages  # 推送到 a.github.io 的 main 分支
           user_name: 'github-actions'
